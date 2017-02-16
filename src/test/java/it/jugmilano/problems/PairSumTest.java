@@ -57,6 +57,14 @@ public class PairSumTest {
         assertTrue(Arrays.equals(expected, result));
         assertEquals(sum, result[0] + result[1]);
 
+        input = new int[]{3, 2, 5};
+        sum = 6;
+        expected = new int[]{};
+        result = PairSum.pairSum(input, sum);
+        assertNotNull(result);
+        assertEquals(expected.length, result.length);
+        assertTrue(Arrays.equals(expected, result));
+
         isCorrect = true;
     }
 
